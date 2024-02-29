@@ -1,0 +1,10 @@
+.container{
+    @apply rounded h-48 mt-20 ml-20;
+}
+
+.white{
+    @apply bg-slate-100;
+}
+.red{
+    @apply bg-rose-700
+}
