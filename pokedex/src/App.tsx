@@ -5,6 +5,7 @@ import Button from './components/Button';
 import Container from './components/Pokedex/Container';
 import Name from './components/Pokedex/Name';
 import Abilities from './components/Pokedex/Abilities';
+import DisplayNumbers from './components/Pokedex/DisplayNumbers';
 
 function App() {
   const [contador, setContador]= React.useState(0);
