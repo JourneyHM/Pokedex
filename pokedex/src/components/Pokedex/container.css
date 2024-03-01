@@ -1,0 +1,14 @@
+.container{
+    @apply rounded size-96 mt-20 ml-20 ;
+}
+
+.white{
+    @apply bg-slate-100;
+}
+.red{
+    @apply bg-rose-700
+}
+.blue{
+    @apply bg-cyan-200;
+}
+
