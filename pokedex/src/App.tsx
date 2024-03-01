@@ -21,10 +21,11 @@ function App() {
     <div className="App bg-yellow-300">
       <div className="flex flex-row">
         <div className="basis-1/2 flex flex-col">
-          <div className="rounded-lg border-8 border-pink-950 bg-rose-700 h-48 mt-20 ml-20"></div>
-          
-          <div className="rounded-lg border-8 border-pink-950 bg-rose-800 h-dvh ml-20">
-            <Container color='blue'></Container>
+          <div className="rounded-lg border-8 border-pink-950 bg-rose-700 h-48  mt-20 ml-20"></div>
+          <div className="rounded-lg border-8 border-pink-950 bg-rose-800 h-dvh  ml-20">
+            <div className="rounded-lg border-8 border-pink-950 bg-rose-800 h-full mb-80 ml-20 mr-20">
+              <Container color='blue'></Container>
+            </div>
           </div>
           
         </div>
