@@ -1,0 +1,7 @@
+.display{
+    @apply h-24 mx-32 mt-28;
+}
+
+.disColor{
+    @apply bg-gradient-to-r from-gray-900 to-stone-500;
+}
