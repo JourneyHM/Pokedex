@@ -1,5 +1,5 @@
 .container{
-    @apply rounded h-48 mt-20 ml-20;
+    @apply rounded size-96 mt-20 ml-20 ;
 }
 
 .white{
@@ -8,3 +8,7 @@
 .red{
     @apply bg-rose-700
 }
+.blue{
+    @apply bg-cyan-200;
+}
+
