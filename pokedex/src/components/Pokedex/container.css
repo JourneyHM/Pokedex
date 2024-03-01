@@ -12,7 +12,7 @@
 }
 .escala{
 
-    @apply w-80 h-80 mb-4 bg-cyan-200 flex ;
+    @apply w-80 h-80  bg-cyan-200 flex ;
   
   }
   
