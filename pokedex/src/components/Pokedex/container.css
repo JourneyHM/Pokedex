@@ -1,5 +1,5 @@
 .container{
-    @apply rounded size-96 mt-20 ml-52 ;
+    @apply rounded size-96 mt-20 ml-52 mr-20;
 }
 
 .white{
