@@ -1,9 +1,8 @@
 .container{
-    @apply rounded size-96 mt-20 ml-52 mr-20;
+    @apply rounded size-96 mt-20 ml-52 mr-52 flex justify-center items-center;
 }
-
 .white{
-    @apply bg-slate-100;
+    @apply bg-white;
 }
 .red{
     @apply bg-rose-700
@@ -11,4 +10,9 @@
 .blue{
     @apply bg-cyan-200;
 }
+.escala{
 
+    @apply w-80 h-80 mb-4 bg-cyan-200 flex ;
+  
+  }
+  
