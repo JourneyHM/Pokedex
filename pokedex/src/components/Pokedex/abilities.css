@@ -1,0 +1,6 @@
+.abt{
+    @apply font-bold rounded-3xl h-48 mt-10 ml-20 mr-20;
+}
+.green{
+    @apply bg-green-700 text-black;
+}
