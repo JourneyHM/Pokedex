@@ -41,6 +41,11 @@ function App() {
         <div className="basis-1/2 flex flex-col">
           <div className="bg-yellow-300 h-48 mt-20 mr-20"></div>
           <div className="rounded-lg border-8 border-pink-950 bg-rose-700 h-dvh mb-20 mr-20">
+          <div className="App">
+            {pokemon &&
+              <Abilities pokemon={pokemon} color= 'green'></Abilities>
+            }
+    </div>
           </div>
         </div>
       </div>
