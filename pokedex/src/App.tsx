@@ -27,8 +27,7 @@ function App() {
           <div className="rounded-lg border-8 border-pink-950 bg-rose-700 h-48  mt-20 ml-20"></div>
           <div className="rounded-lg border-8 border-pink-950 bg-rose-800 h-dvh  ml-20">
             <div className="rounded-lg border-8 border-pink-950 bg-rose-800 h-full ml-20 mr-20">
-              <Container color='white'></Container>
-              {/*<Name color='white_namebox' label={''}></Name>*/}
+              <Container color='white' pokemon={pokemon}></Container>
               <br></br>
               <br></br>
               <p>{pokemonName}</p>
@@ -47,4 +46,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;
