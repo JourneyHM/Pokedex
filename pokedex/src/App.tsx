@@ -5,6 +5,7 @@ import Button from './components/Button';
 import Container from './components/Pokedex/Container';
 import Name from './components/Pokedex/Name';
 import Abilities from './components/Pokedex/Abilities';
+import PokemonComponent from './components/PokemonComponent';
 import { Pokemon } from './models/Pokemon';
 import { PokeApi } from './api/PokeApi';
 
@@ -34,7 +35,6 @@ function App() {
               <p>{pokemonName}</p>
               <input type="text" onChange={(e)=>setPokemonName(e.target.value)}></input>
               <Button onClick={()=>buscar()} color='red' label='Buscar'></Button>
-             
             </div>
           </div>
         </div>
