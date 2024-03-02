@@ -5,6 +5,7 @@ import Button from './components/Button';
 import Container from './components/Pokedex/Container';
 import Name from './components/Pokedex/Name';
 import Abilities from './components/Pokedex/Abilities';
+import PokemonComponent from './components/PokemonComponent';
 import { Pokemon } from './models/Pokemon';
 import { PokeApi } from './api/PokeApi';
 
@@ -40,6 +41,8 @@ function App() {
         <div className="basis-1/2 flex flex-col">
           <div className="bg-yellow-300 h-48 mt-20 mr-20"></div>
           <div className="rounded-lg border-8 border-pink-950 bg-rose-700 h-dvh mb-20 mr-20">
+            {pokemon && 
+              <PokemonComponent pokemon={pokemon}></PokemonComponent>}
           </div>
         </div>
       </div>
