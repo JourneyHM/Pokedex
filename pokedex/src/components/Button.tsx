@@ -8,10 +8,10 @@ interface ButtonProps{
 
 export default function Button(props:ButtonProps){
     return (
-        <><button onClick={props.onClick}
-            className={`btn ${props.color === 'red' ? 'red' : ''} ${props.color === 'green' ? 'green' : ''} ${props.color === 'yellow' ? 'yellow' : ''} ${props.color === 'blue' ? 'blue' : ''}`}
-        >
+        <button onClick={props.onClick}
+            className={`btn ${props.color==='red'?'red':''} ${props.color==='green'?'green':''} ${props.color==='yellow'?'yellow':''} ${props.color==='blue'?'blue':''}` }
+            >
             {props.label}
-        </button></>
+        </button>
     )
 }
