@@ -5,18 +5,19 @@ import Button from './components/Button';
 import Container from './components/Pokedex/Container';
 import Name from './components/Pokedex/Name';
 import Abilities from './components/Pokedex/Abilities';
+import { Pokemon } from './models/Pokemon';
+import { PokeApi } from './api/PokeApi';
 
 function App() {
-  const [contador, setContador]= React.useState(0);
+  const [pokemonName,setPokemonName] = React.useState('');
+  const [pokemon,setPokemon]=React.useState<Pokemon|null>(null);
 
-  function aumentar(){
-    setContador(contador+1);
-    console.log(contador);
-  }
-
-  function disminuir(){
-    setContador(contador-1);
-    console.log(contador);
+  function buscar(){
+    PokeApi.getPokemonById(pokemonName).then((response)=>{
+      setPokemon(response.data);
+    }).catch((error)=>{
+      console.error(error);
+    })
   }
 
   return (
@@ -27,8 +28,13 @@ function App() {
           <div className="rounded-lg border-8 border-pink-950 bg-rose-800 h-dvh  ml-20">
             <div className="rounded-lg border-8 border-pink-950 bg-rose-800 h-full ml-20 mr-20">
               <Container color='white'></Container>
-              <Name color='white_namebox' label={''}></Name>
-              <Abilities color='green' label={''}></Abilities>
+              {/*<Name color='white_namebox' label={''}></Name>*/}
+              <br></br>
+              <br></br>
+              <p>{pokemonName}</p>
+              <input type="text" onChange={(e)=>setPokemonName(e.target.value)}></input>
+              <Button onClick={()=>buscar()} color='red' label='Buscar'></Button>
+             
             </div>
           </div>
         </div>
