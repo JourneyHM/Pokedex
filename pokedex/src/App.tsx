@@ -34,7 +34,6 @@ function App() {
               <p>{pokemonName}</p>
               <input type="text" onChange={(e)=>setPokemonName(e.target.value)}></input>
               <Button onClick={()=>buscar()} color='red' label='Buscar'></Button>
-             
             </div>
           </div>
         </div>
